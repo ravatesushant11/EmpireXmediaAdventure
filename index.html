@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Website</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+
+        <!-- nav-section -->
+        <nav>
+            <div class="inner-nav-1200px">
+                <!-- logo -->
+                <img src="assets/logo.png" alt="logo" width="150px" class="logo">
+                <!-- hamburger icon -->
+                <button class="hamburger" onclick="toggleNav()">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                </button>
+                <!-- inner-nav -->
+                <div class="inner-nav-links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="pakages.html">Packages</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <!-- background -->
+            <img src="assets/pexels-joyston-judah-933054.jpg" class="background">
+            <!-- foreground -->
+            <img src="assets/foreground-men.png" class="foreground">
+            <!-- heading -->
+            <h1 class="main-heading">ADVENTURE</h1>
+        </div>
+        
+        <section>
+            <h2 class="secHeading">Adventure Time !</h2>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolorem perspiciatis blanditiis doloremque voluptates vero molestias commodi animi deserunt excepturi perferendis, quis sint sunt laboriosam! Maiores similique dolorum incidunt temporibus aperiam 
+                <br> <br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt mollitia, sapiente possimus recusandae ducimus quam voluptate voluptates culpa beatae cum autem quae eum odio laboriosam fugit ad tempore dignissimos fuga veritatis consectetur laborum in explicabo.
+            </p>
+            
+            <div class="bg bg-1">
+                <h2 class="desc">Biking</h2>
+            </div>
+
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolorem perspiciatis blanditiis doloremque voluptates vero molestias commodi animi deserunt excepturi perferendis, quis sint sunt laboriosam! Maiores similique dolorum incidunt temporibus aperiam 
+                <br> <br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt mollitia, sapiente possimus recusandae ducimus quam voluptate voluptates culpa beatae cum autem quae eum odio laboriosam fugit ad tempore dignissimos fuga veritatis consectetur laborum in explicabo.
+            </p>
+
+            <div class="bg bg-2">
+                <h2 class="desc">Para Gliding</h2>
+            </div>
+
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolorem perspiciatis blanditiis doloremque voluptates vero molestias commodi animi deserunt excepturi perferendis, quis sint sunt laboriosam! Maiores similique dolorum incidunt temporibus aperiam 
+                <br> <br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt mollitia, sapiente possimus recusandae ducimus quam voluptate voluptates culpa beatae cum autem quae eum odio laboriosam fugit ad tempore dignissimos fuga veritatis consectetur laborum in explicabo.
+            </p>
+
+            <div class="bg bg-3">
+                <h2 class="desc">Surfing</h2>
+            </div>
+
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolorem perspiciatis blanditiis doloremque voluptates vero molestias commodi animi deserunt excepturi perferendis, quis sint sunt laboriosam! Maiores similique dolorum incidunt temporibus aperiam 
+                <br> <br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt mollitia, sapiente possimus recusandae ducimus quam voluptate voluptates culpa beatae cum autem quae eum odio laboriosam fugit ad tempore dignissimos fuga veritatis consectetur laborum in explicabo.
+            </p>
+            
+        </section>
+        <!-- footer -->
+        <footer class="footer-container">
+        <div class="footer">
+            <!-- footer logo -->
+            <div class="footer-logo flex-item">
+                    <img src="assets/footer-logo.png" alt="logo" width="150px">
+            </div>
+            <!-- footer menu -->
+            <div class="footer-menu flex-item">
+                    <div style="color: rgba(104, 104, 104, 0.884);">MENU</div>
+                    <div class="flex-direction-col">
+                        <a href="#home">Home</a>
+                        <a href="#packages">Packages</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+            </div>
+            <!-- address-->
+            <div class="address flex-item">
+                    <div style="color:rgba(104, 104, 104, 0.884);"> ADDRESS </div>
+                    <div class="main-address">221B <br> Baker Street <br> London <br> UK</div>
+            </div>
+            <!-- get in touch -->
+            <div style="display: flex; justify-content: center; gap: 2rem;">
+                <div class="vertical-line"></div>
+                <div class="get-in-touch flex-item">
+                    <div style="color:rgba(104, 104, 104, 0.884);"> GET IN TOUCH </div>
+                    <div class="main-contact">
+                        <span style="color: white;">Email:</span>
+                        <a href="mailto:info@empirexmedia.in">info@empirexmedia.in</a> <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-text">© 2023 TOURISM LANDING PAGE, DESIGNED BY SUSHANT</div>
+        </footer>
+    </div>
+    <script>
+            function toggleNav() {
+                var navLinks = document.getElementById("navLinks");
+                navLinks.style.display = navLinks.style.display === "flex" ? "none" : "flex";
+
+                // Toggle the animation class for the bars
+                document.querySelectorAll('.bar').forEach(bar => bar.classList.toggle('change'));
+
+                // Toggle the class to show/hide nav links
+                navLinks.classList.toggle('show');
+            }
+        </script>
+</body>
+</html>

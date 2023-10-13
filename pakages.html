@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Packages in India</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #00bcd4, #3f51b5); /* Gradient background */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 800px;
+        }
+
+        .package {
+            background-color: #3f51b5;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+            width: 250px;
+            text-align: center;
+        }
+
+        .package:hover {
+            background-color: #2196f3;
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #c5cae9;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #ff9800;
+            margin-bottom: 15px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #ff9800;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: #f57c00;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="package">
+            <h2>Himalayan Trek</h2>
+            <p>Experience the breathtaking beauty of the Himalayas with our guided trekking adventure.</p>
+            <p class="price">$1200 per person</p>
+            <a href="#" class="button">Book Now</a>
+        </div>
+
+        <div class="package">
+            <h2>Rajasthan Desert Expedition</h2>
+            <p>Embark on a thrilling desert expedition in the colorful state of Rajasthan.</p>
+            <p class="price">$900 per person</p>
+            <a href="#" class="button">Book Now</a>
+        </div>
+
+        <div class="package">
+            <h2>Goa Water Sports Extravaganza</h2>
+            <p>Enjoy a variety of water sports and beach adventures in the vibrant state of Goa.</p>
+            <p class="price">$750 per person</p>
+            <a href="#" class="button">Book Now</a>
+        </div>
+    </div>
+
+</body>
+</html>
